@@ -9,13 +9,30 @@
 /* Begin PBXBuildFile section */
 		BC5A576B2A93FBE800CA4599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A576A2A93FBE800CA4599 /* AppDelegate.swift */; };
 		BC5A576D2A93FBE800CA4599 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A576C2A93FBE800CA4599 /* SceneDelegate.swift */; };
-		BC5A576F2A93FBE800CA4599 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A576E2A93FBE800CA4599 /* ViewController.swift */; };
 		BC5A57722A93FBE800CA4599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5A57702A93FBE800CA4599 /* Main.storyboard */; };
 		BC5A57742A93FBE900CA4599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5A57732A93FBE900CA4599 /* Assets.xcassets */; };
 		BC5A57772A93FBE900CA4599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5A57752A93FBE900CA4599 /* LaunchScreen.storyboard */; };
 		BC5A57822A93FBE900CA4599 /* SongBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A57812A93FBE900CA4599 /* SongBoxTests.swift */; };
 		BC5A578C2A93FBE900CA4599 /* SongBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A578B2A93FBE900CA4599 /* SongBoxUITests.swift */; };
 		BC5A578E2A93FBE900CA4599 /* SongBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A578D2A93FBE900CA4599 /* SongBoxUITestsLaunchTests.swift */; };
+		BC5A57A22A9405DC00CA4599 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A57A12A9405DC00CA4599 /* APIEndPoint.swift */; };
+		BC5A57A42A94066100CA4599 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A57A32A94066100CA4599 /* Constant.swift */; };
+		BC5A57A62A94068F00CA4599 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A57A52A94068F00CA4599 /* Parameter.swift */; };
+		BC5A57A82A94089A00CA4599 /* NetworkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A57A72A94089A00CA4599 /* NetworkingProtocol.swift */; };
+		BC5A57AA2A9408FB00CA4599 /* URLSessionServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5A57A92A9408FB00CA4599 /* URLSessionServiceManager.swift */; };
+		BCB6D3062A952C8A00726A0F /* MostPlayedSongResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D3052A952C8A00726A0F /* MostPlayedSongResponse.swift */; };
+		BCB6D3092A952D4700726A0F /* MainDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D3082A952D4700726A0F /* MainDataProvider.swift */; };
+		BCB6D30B2A952D4C00726A0F /* MainDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D30A2A952D4C00726A0F /* MainDataProviderProtocol.swift */; };
+		BCB6D30E2A952DC100726A0F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D30D2A952DC100726A0F /* MainViewModel.swift */; };
+		BCB6D3102A952DC500726A0F /* MainViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D30F2A952DC500726A0F /* MainViewModelProtocol.swift */; };
+		BCB6D3132A9530C000726A0F /* TableCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D3122A9530C000726A0F /* TableCellType.swift */; };
+		BCB6D3172A95328000726A0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D3152A95328000726A0F /* MainViewController.swift */; };
+		BCB6D3182A95328000726A0F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB6D3162A95328000726A0F /* MainViewController.xib */; };
+		BCB6D31C2A9532B600726A0F /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D31A2A9532B600726A0F /* SongCell.swift */; };
+		BCB6D31D2A9532B600726A0F /* SongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB6D31B2A9532B600726A0F /* SongCell.xib */; };
+		BCB6D3202A95488F00726A0F /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D31F2A95488F00726A0F /* ImageManager.swift */; };
+		BCB6D3302A95554100726A0F /* StretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D32F2A95554100726A0F /* StretchyHeader.swift */; };
+		BCB6D3322A95554F00726A0F /* StretchyHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB6D3312A95554F00726A0F /* StretchyHeader.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +56,6 @@
 		BC5A57672A93FBE800CA4599 /* SongBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5A576A2A93FBE800CA4599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5A576C2A93FBE800CA4599 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BC5A576E2A93FBE800CA4599 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC5A57712A93FBE800CA4599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC5A57732A93FBE900CA4599 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5A57762A93FBE900CA4599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,24 @@
 		BC5A57872A93FBE900CA4599 /* SongBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SongBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5A578B2A93FBE900CA4599 /* SongBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongBoxUITests.swift; sourceTree = "<group>"; };
 		BC5A578D2A93FBE900CA4599 /* SongBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC5A57A12A9405DC00CA4599 /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		BC5A57A32A94066100CA4599 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		BC5A57A52A94068F00CA4599 /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		BC5A57A72A94089A00CA4599 /* NetworkingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocol.swift; sourceTree = "<group>"; };
+		BC5A57A92A9408FB00CA4599 /* URLSessionServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionServiceManager.swift; sourceTree = "<group>"; };
+		BCB6D3052A952C8A00726A0F /* MostPlayedSongResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPlayedSongResponse.swift; sourceTree = "<group>"; };
+		BCB6D3082A952D4700726A0F /* MainDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataProvider.swift; sourceTree = "<group>"; };
+		BCB6D30A2A952D4C00726A0F /* MainDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataProviderProtocol.swift; sourceTree = "<group>"; };
+		BCB6D30D2A952DC100726A0F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		BCB6D30F2A952DC500726A0F /* MainViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelProtocol.swift; sourceTree = "<group>"; };
+		BCB6D3122A9530C000726A0F /* TableCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellType.swift; sourceTree = "<group>"; };
+		BCB6D3152A95328000726A0F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BCB6D3162A95328000726A0F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BCB6D31A2A9532B600726A0F /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
+		BCB6D31B2A9532B600726A0F /* SongCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongCell.xib; sourceTree = "<group>"; };
+		BCB6D31F2A95488F00726A0F /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		BCB6D32F2A95554100726A0F /* StretchyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeader.swift; sourceTree = "<group>"; };
+		BCB6D3312A95554F00726A0F /* StretchyHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StretchyHeader.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +133,12 @@
 		BC5A57692A93FBE800CA4599 /* SongBox */ = {
 			isa = PBXGroup;
 			children = (
-				BC5A576A2A93FBE800CA4599 /* AppDelegate.swift */,
-				BC5A576C2A93FBE800CA4599 /* SceneDelegate.swift */,
-				BC5A576E2A93FBE800CA4599 /* ViewController.swift */,
-				BC5A57702A93FBE800CA4599 /* Main.storyboard */,
+				BCB6D31E2A95488500726A0F /* ImageManager */,
+				BC5A579D2A9404C800CA4599 /* ServiceManager */,
+				BC5A579C2A9404B400CA4599 /* Modules */,
+				BC5A579B2A94048D00CA4599 /* Storyboards */,
+				BC5A579A2A94048900CA4599 /* Delegates */,
 				BC5A57732A93FBE900CA4599 /* Assets.xcassets */,
-				BC5A57752A93FBE900CA4599 /* LaunchScreen.storyboard */,
 				BC5A57782A93FBE900CA4599 /* Info.plist */,
 			);
 			path = SongBox;
@@ -125,6 +159,143 @@
 				BC5A578D2A93FBE900CA4599 /* SongBoxUITestsLaunchTests.swift */,
 			);
 			path = SongBoxUITests;
+			sourceTree = "<group>";
+		};
+		BC5A579A2A94048900CA4599 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BC5A576C2A93FBE800CA4599 /* SceneDelegate.swift */,
+				BC5A576A2A93FBE800CA4599 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		BC5A579B2A94048D00CA4599 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BC5A57752A93FBE900CA4599 /* LaunchScreen.storyboard */,
+				BC5A57702A93FBE800CA4599 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BC5A579C2A9404B400CA4599 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D32A2A9554E300726A0F /* Header */,
+				BCB6D3192A9532AA00726A0F /* Cells */,
+				BCB6D3142A95327000726A0F /* View */,
+				BCB6D3112A9530B700726A0F /* CellType */,
+				BCB6D30C2A952DBA00726A0F /* ViewModel */,
+				BCB6D3072A952D3E00726A0F /* MainDataProvider */,
+				BCB6D3042A952C7F00726A0F /* Response */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC5A579D2A9404C800CA4599 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				BC5A57A02A9404DD00CA4599 /* Protocol */,
+				BC5A579F2A9404D700CA4599 /* URLSession */,
+				BC5A579E2A9404D200CA4599 /* API */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		BC5A579E2A9404D200CA4599 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BC5A57A12A9405DC00CA4599 /* APIEndPoint.swift */,
+				BC5A57A32A94066100CA4599 /* Constant.swift */,
+				BC5A57A52A94068F00CA4599 /* Parameter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BC5A579F2A9404D700CA4599 /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				BC5A57A92A9408FB00CA4599 /* URLSessionServiceManager.swift */,
+			);
+			path = URLSession;
+			sourceTree = "<group>";
+		};
+		BC5A57A02A9404DD00CA4599 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BC5A57A72A94089A00CA4599 /* NetworkingProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BCB6D3042A952C7F00726A0F /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D3052A952C8A00726A0F /* MostPlayedSongResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		BCB6D3072A952D3E00726A0F /* MainDataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D3082A952D4700726A0F /* MainDataProvider.swift */,
+				BCB6D30A2A952D4C00726A0F /* MainDataProviderProtocol.swift */,
+			);
+			path = MainDataProvider;
+			sourceTree = "<group>";
+		};
+		BCB6D30C2A952DBA00726A0F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D30D2A952DC100726A0F /* MainViewModel.swift */,
+				BCB6D30F2A952DC500726A0F /* MainViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BCB6D3112A9530B700726A0F /* CellType */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D3122A9530C000726A0F /* TableCellType.swift */,
+			);
+			path = CellType;
+			sourceTree = "<group>";
+		};
+		BCB6D3142A95327000726A0F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D3152A95328000726A0F /* MainViewController.swift */,
+				BCB6D3162A95328000726A0F /* MainViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCB6D3192A9532AA00726A0F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D31A2A9532B600726A0F /* SongCell.swift */,
+				BCB6D31B2A9532B600726A0F /* SongCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BCB6D31E2A95488500726A0F /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D31F2A95488F00726A0F /* ImageManager.swift */,
+			);
+			path = ImageManager;
+			sourceTree = "<group>";
+		};
+		BCB6D32A2A9554E300726A0F /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				BCB6D32F2A95554100726A0F /* StretchyHeader.swift */,
+				BCB6D3312A95554F00726A0F /* StretchyHeader.xib */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +403,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5A57772A93FBE900CA4599 /* LaunchScreen.storyboard in Resources */,
+				BCB6D31D2A9532B600726A0F /* SongCell.xib in Resources */,
+				BCB6D3322A95554F00726A0F /* StretchyHeader.xib in Resources */,
 				BC5A57742A93FBE900CA4599 /* Assets.xcassets in Resources */,
 				BC5A57722A93FBE800CA4599 /* Main.storyboard in Resources */,
+				BCB6D3182A95328000726A0F /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +432,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5A576F2A93FBE800CA4599 /* ViewController.swift in Sources */,
+				BCB6D3302A95554100726A0F /* StretchyHeader.swift in Sources */,
+				BC5A57A62A94068F00CA4599 /* Parameter.swift in Sources */,
 				BC5A576B2A93FBE800CA4599 /* AppDelegate.swift in Sources */,
+				BC5A57AA2A9408FB00CA4599 /* URLSessionServiceManager.swift in Sources */,
 				BC5A576D2A93FBE800CA4599 /* SceneDelegate.swift in Sources */,
+				BCB6D3132A9530C000726A0F /* TableCellType.swift in Sources */,
+				BC5A57A82A94089A00CA4599 /* NetworkingProtocol.swift in Sources */,
+				BC5A57A22A9405DC00CA4599 /* APIEndPoint.swift in Sources */,
+				BCB6D3172A95328000726A0F /* MainViewController.swift in Sources */,
+				BC5A57A42A94066100CA4599 /* Constant.swift in Sources */,
+				BCB6D3062A952C8A00726A0F /* MostPlayedSongResponse.swift in Sources */,
+				BCB6D3092A952D4700726A0F /* MainDataProvider.swift in Sources */,
+				BCB6D3202A95488F00726A0F /* ImageManager.swift in Sources */,
+				BCB6D3102A952DC500726A0F /* MainViewModelProtocol.swift in Sources */,
+				BCB6D30B2A952D4C00726A0F /* MainDataProviderProtocol.swift in Sources */,
+				BCB6D31C2A9532B600726A0F /* SongCell.swift in Sources */,
+				BCB6D30E2A952DC100726A0F /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
