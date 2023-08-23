@@ -27,7 +27,9 @@ final class MainViewModel: MainViewModelProtocol {
     }
     
     func fetchSongs() {
+        LoadingManager.shared.show()
         dataProvider.fetchSongs(endPoint: .music) { result in
+            LoadingManager.shared.hide()
             switch result {
             case .success(let success):
                 if let songs = success.feed.results {

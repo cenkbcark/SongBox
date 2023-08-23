@@ -33,6 +33,10 @@
 		BCB6D3202A95488F00726A0F /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D31F2A95488F00726A0F /* ImageManager.swift */; };
 		BCB6D3302A95554100726A0F /* StretchyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6D32F2A95554100726A0F /* StretchyHeader.swift */; };
 		BCB6D3322A95554F00726A0F /* StretchyHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB6D3312A95554F00726A0F /* StretchyHeader.xib */; };
+		BCD887BE2A968975003AE4A1 /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD887BD2A968975003AE4A1 /* LoadingManager.swift */; };
+		BCD887C12A96899F003AE4A1 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD887C02A96899F003AE4A1 /* UIApplication+Ext.swift */; };
+		BCD887C32A9689AE003AE4A1 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD887C22A9689AE003AE4A1 /* UIView+Ext.swift */; };
+		BCD887C62A968AA6003AE4A1 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD887C52A968AA6003AE4A1 /* AlertManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		BCB6D31F2A95488F00726A0F /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		BCB6D32F2A95554100726A0F /* StretchyHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeader.swift; sourceTree = "<group>"; };
 		BCB6D3312A95554F00726A0F /* StretchyHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StretchyHeader.xib; sourceTree = "<group>"; };
+		BCD887BD2A968975003AE4A1 /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
+		BCD887C02A96899F003AE4A1 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		BCD887C22A9689AE003AE4A1 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		BCD887C52A968AA6003AE4A1 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +141,8 @@
 		BC5A57692A93FBE800CA4599 /* SongBox */ = {
 			isa = PBXGroup;
 			children = (
-				BCB6D31E2A95488500726A0F /* ImageManager */,
-				BC5A579D2A9404C800CA4599 /* ServiceManager */,
+				BCD887BF2A968996003AE4A1 /* Extension */,
+				BCD887BB2A968959003AE4A1 /* Managers */,
 				BC5A579C2A9404B400CA4599 /* Modules */,
 				BC5A579B2A94048D00CA4599 /* Storyboards */,
 				BC5A579A2A94048900CA4599 /* Delegates */,
@@ -298,6 +306,42 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		BCD887BB2A968959003AE4A1 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BCD887C42A968A9D003AE4A1 /* AlertManager */,
+				BCD887BC2A96896E003AE4A1 /* LoadingManager */,
+				BC5A579D2A9404C800CA4599 /* ServiceManager */,
+				BCB6D31E2A95488500726A0F /* ImageManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BCD887BC2A96896E003AE4A1 /* LoadingManager */ = {
+			isa = PBXGroup;
+			children = (
+				BCD887BD2A968975003AE4A1 /* LoadingManager.swift */,
+			);
+			path = LoadingManager;
+			sourceTree = "<group>";
+		};
+		BCD887BF2A968996003AE4A1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BCD887C02A96899F003AE4A1 /* UIApplication+Ext.swift */,
+				BCD887C22A9689AE003AE4A1 /* UIView+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BCD887C42A968A9D003AE4A1 /* AlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				BCD887C52A968AA6003AE4A1 /* AlertManager.swift */,
+			);
+			path = AlertManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -434,6 +478,10 @@
 			files = (
 				BCB6D3302A95554100726A0F /* StretchyHeader.swift in Sources */,
 				BC5A57A62A94068F00CA4599 /* Parameter.swift in Sources */,
+				BCD887BE2A968975003AE4A1 /* LoadingManager.swift in Sources */,
+				BCD887C12A96899F003AE4A1 /* UIApplication+Ext.swift in Sources */,
+				BCD887C32A9689AE003AE4A1 /* UIView+Ext.swift in Sources */,
+				BCD887C62A968AA6003AE4A1 /* AlertManager.swift in Sources */,
 				BC5A576B2A93FBE800CA4599 /* AppDelegate.swift in Sources */,
 				BC5A57AA2A9408FB00CA4599 /* URLSessionServiceManager.swift in Sources */,
 				BC5A576D2A93FBE800CA4599 /* SceneDelegate.swift in Sources */,

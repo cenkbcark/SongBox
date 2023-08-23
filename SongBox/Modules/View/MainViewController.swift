@@ -36,7 +36,7 @@ extension MainViewController: MainViewModelDelegate {
         case .didFetchSongs:
             tableView.reloadData()
         case .errorFetchSongs(error: let error):
-            print(error)
+            AlertManager.shared.showAlert(with: error)
         case .reloadTableView:
             tableView.reloadData()
         }
